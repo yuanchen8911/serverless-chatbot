@@ -1,0 +1,12 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  bot-crud-slack:
+    lang: python3
+    handler: ./bot-crud-slack
+    image: yangwg/bot-crud-slack
+    environment:
+      combine_output: false
+      Eve_Mongo_Entry_POINT: http://172.17.0.1:5000

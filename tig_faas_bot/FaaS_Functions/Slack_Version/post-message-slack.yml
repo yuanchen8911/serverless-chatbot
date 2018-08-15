@@ -1,0 +1,15 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  post-message-slack:
+    lang: python3
+    handler: ./post-message-slack
+    image: yangwg/post-message-slack
+    environment:
+      combine_output: false
+      SLACK_POST_URL: https://slack.com/api/chat.postMessage
+      SLACK_BOT_TOKEN_SECRET_NAME: slack_bot_token
+    secrets:
+    - slack_bot_token  

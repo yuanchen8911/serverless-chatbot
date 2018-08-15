@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  get-option-list-slack:
+    lang: python3
+    handler: ./get-option-list-slack
+    image: yangwg/get-option-list-slack
+    environment:
+      combine_output: false

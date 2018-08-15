@@ -1,0 +1,286 @@
+.
+├── Demo
+│   ├── FaaS_Bot_yangwg.pptx
+│   ├── FaaS_Slack_Bot_Demo.MOV
+│   ├── asset
+│   │   ├── FaaS_Slack_Bot_Diagram.jpg
+│   │   ├── FaaS_Slack_Bot_WorkFlow_Num.jpg
+│   │   └── bot_interface.jpg
+│   └── ~$FaaS_Bot_yangwg.pptx
+├── Fib_Test
+│   └── Fibonacci�\225�\224�记�\225_Weiguang_Yang�\233\236�\215.docx
+├── Guides
+│   ├── Asset
+│   │   ├── Create_Slack_App_1.jpg
+│   │   ├── Create_Slack_App_2.png
+│   │   ├── Dialogflow_Token_Sample.jpg
+│   │   ├── Dialogflow_Webhook.jpg
+│   │   ├── FaaS_Slack_Bot_WorkFlow_Num.jpg
+│   │   ├── Slack_Bot_Token_Sample.jpg
+│   │   ├── Slack_bot_setting_1.jpg
+│   │   ├── Slack_bot_setting_2.jpg
+│   │   ├── Slack_bot_setting_3.jpg
+│   │   ├── bot_interface.jpg
+│   │   ├── dialogflow_addtocart.png
+│   │   ├── dialogflow_checkout.png
+│   │   ├── dialogflow_end.png
+│   │   ├── dialogflow_greeting.png
+│   │   ├── dialogflow_help.png
+│   │   ├── dialogflow_import_agetn_1.jpg
+│   │   ├── dialogflow_removeall.png
+│   │   ├── dialogflow_removefromcart.png
+│   │   ├── dialogflow_showcart.png
+│   │   ├── slack_bot_setting_interactive_components.jpg
+│   │   ├── slack_bot_setting_oauth_1.jpg
+│   │   ├── slack_bot_setting_oauth_2.jpg
+│   │   ├── slack_bot_setting_oauth_3.jpg
+│   │   └── slack_chat_1.jpg
+│   ├── Bot\ Build\ &\ Run\ Guide.md
+│   ├── Bot\ Build\ &\ Run\ Guide.pdf
+│   ├── Bot\ Input\ Guide.md
+│   └── Reference\ Summary.md
+├── README.md
+├── repo_file_tree.txt
+└── tig_faas_bot
+    ├── Bot_Secrets
+    │   ├── README.md
+    │   ├── dialogflow_client_token.txt
+    │   └── slack_bot_token.txt
+    ├── Dialogflow_File
+    │   ├── README.md
+    │   └── faas-bot.zip
+    ├── Eve_MongoDB
+    │   ├── README.md
+    │   ├── __init__.py
+    │   ├── mongo_eve.py
+    │   ├── requirements.txt
+    │   └── settings.py
+    ├── FaaS_Functions
+    │   ├── README.md
+    │   ├── Slack_Version
+    │   │   ├── bot-crud-slack
+    │   │   │   ├── __init__.py
+    │   │   │   ├── eve_mongo_utility.py
+    │   │   │   ├── general_utility.py
+    │   │   │   ├── handler.py
+    │   │   │   └── requirements.txt
+    │   │   ├── bot-crud-slack.yml
+    │   │   ├── get-option-list-slack
+    │   │   │   ├── __init__.py
+    │   │   │   ├── handler.py
+    │   │   │   └── requirements.txt
+    │   │   ├── get-option-list-slack.yml
+    │   │   ├── get-user-selected-option-from-slack-slack
+    │   │   │   ├── __init__.py
+    │   │   │   ├── faas_function_call_utility.py
+    │   │   │   ├── general_utility.py
+    │   │   │   ├── handler.py
+    │   │   │   └── requirements.txt
+    │   │   ├── get-user-selected-option-from-slack-slack.yml
+    │   │   ├── nlp-webhook-slack
+    │   │   │   ├── __init__.py
+    │   │   │   ├── faas_function_call_utility.py
+    │   │   │   ├── general_utility.py
+    │   │   │   ├── handler.py
+    │   │   │   └── requirements.txt
+    │   │   ├── nlp-webhook-slack.yml
+    │   │   ├── post-message-slack
+    │   │   │   ├── __init__.py
+    │   │   │   ├── general_utility.py
+    │   │   │   ├── handler.py
+    │   │   │   └── requirements.txt
+    │   │   ├── post-message-slack.yml
+    │   │   ├── query-dialogflow-slack
+    │   │   │   ├── __init__.py
+    │   │   │   ├── faas_function_call_utility.py
+    │   │   │   ├── general_utility.py
+    │   │   │   ├── handler.py
+    │   │   │   └── requirements.txt
+    │   │   ├── query-dialogflow-slack.yml
+    │   │   ├── script_build_deploy_bot_functions.py
+    │   │   ├── slack-event-webhook-slack
+    │   │   │   ├── __init__.py
+    │   │   │   ├── faas_function_call_utility.py
+    │   │   │   ├── general_utility.py
+    │   │   │   ├── handler.py
+    │   │   │   └── requirements.txt
+    │   │   ├── slack-event-webhook-slack.yml
+    │   │   └── template
+    │   │       ├── csharp
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── Program.cs
+    │   │       │   ├── function
+    │   │       │   │   ├── Function.csproj
+    │   │       │   │   └── FunctionHandler.cs
+    │   │       │   ├── root.csproj
+    │   │       │   └── template.yml
+    │   │       ├── dockerfile
+    │   │       │   ├── function
+    │   │       │   │   └── Dockerfile
+    │   │       │   └── template.yml
+    │   │       ├── go
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── function
+    │   │       │   │   └── handler.go
+    │   │       │   ├── main.go
+    │   │       │   └── template.yml
+    │   │       ├── go-armhf
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── function
+    │   │       │   │   └── handler.go
+    │   │       │   ├── main.go
+    │   │       │   └── template.yml
+    │   │       ├── java8
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── README.md
+    │   │       │   ├── build.gradle
+    │   │       │   ├── entrypoint
+    │   │       │   │   ├── build.gradle
+    │   │       │   │   ├── gradle
+    │   │       │   │   │   └── wrapper
+    │   │       │   │   │       ├── gradle-wrapper.jar
+    │   │       │   │   │       └── gradle-wrapper.properties
+    │   │       │   │   ├── settings.gradle
+    │   │       │   │   └── src
+    │   │       │   │       ├── main
+    │   │       │   │       │   └── java
+    │   │       │   │       │       └── com
+    │   │       │   │       │           └── openfaas
+    │   │       │   │       │               └── entrypoint
+    │   │       │   │       │                   └── App.java
+    │   │       │   │       └── test
+    │   │       │   │           └── java
+    │   │       │   │               └── AppTest.java
+    │   │       │   ├── function
+    │   │       │   │   ├── build.gradle
+    │   │       │   │   ├── gradle
+    │   │       │   │   │   └── wrapper
+    │   │       │   │   │       ├── gradle-wrapper.jar
+    │   │       │   │   │       └── gradle-wrapper.properties
+    │   │       │   │   ├── settings.gradle
+    │   │       │   │   └── src
+    │   │       │   │       ├── main
+    │   │       │   │       │   └── java
+    │   │       │   │       │       └── com
+    │   │       │   │       │           └── openfaas
+    │   │       │   │       │               └── function
+    │   │       │   │       │                   └── Handler.java
+    │   │       │   │       └── test
+    │   │       │   │           └── java
+    │   │       │   │               └── HandlerTest.java
+    │   │       │   ├── gradle
+    │   │       │   │   └── wrapper
+    │   │       │   │       ├── gradle-wrapper.jar
+    │   │       │   │       └── gradle-wrapper.properties
+    │   │       │   ├── model
+    │   │       │   │   ├── build.gradle
+    │   │       │   │   ├── gradle
+    │   │       │   │   │   └── wrapper
+    │   │       │   │   │       ├── gradle-wrapper.jar
+    │   │       │   │   │       └── gradle-wrapper.properties
+    │   │       │   │   ├── settings.gradle
+    │   │       │   │   └── src
+    │   │       │   │       ├── main
+    │   │       │   │       │   └── java
+    │   │       │   │       │       └── com
+    │   │       │   │       │           └── openfaas
+    │   │       │   │       │               └── model
+    │   │       │   │       │                   ├── IHandler.java
+    │   │       │   │       │                   ├── IRequest.java
+    │   │       │   │       │                   ├── IResponse.java
+    │   │       │   │       │                   ├── Request.java
+    │   │       │   │       │                   ├── Response.java
+    │   │       │   │       │                   └── SampleHandler.java
+    │   │       │   │       └── test
+    │   │       │   │           └── java
+    │   │       │   │               ├── RequestTest.java
+    │   │       │   │               └── ResponseTest.java
+    │   │       │   ├── settings.gradle
+    │   │       │   └── template.yml
+    │   │       ├── node
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── function
+    │   │       │   │   ├── handler.js
+    │   │       │   │   └── package.json
+    │   │       │   ├── index.js
+    │   │       │   ├── package.json
+    │   │       │   └── template.yml
+    │   │       ├── node-arm64
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── function
+    │   │       │   │   ├── handler.js
+    │   │       │   │   └── package.json
+    │   │       │   ├── index.js
+    │   │       │   ├── package.json
+    │   │       │   └── template.yml
+    │   │       ├── node-armhf
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── build.sh
+    │   │       │   ├── function
+    │   │       │   │   ├── handler.js
+    │   │       │   │   └── package.json
+    │   │       │   ├── index.js
+    │   │       │   ├── package.json
+    │   │       │   └── template.yml
+    │   │       ├── python
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── function
+    │   │       │   │   ├── handler.py
+    │   │       │   │   └── requirements.txt
+    │   │       │   ├── index.py
+    │   │       │   ├── requirements.txt
+    │   │       │   └── template.yml
+    │   │       ├── python-armhf
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── function
+    │   │       │   │   ├── handler.py
+    │   │       │   │   └── requirements.txt
+    │   │       │   ├── index.py
+    │   │       │   ├── requirements.txt
+    │   │       │   └── template.yml
+    │   │       ├── python3
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── function
+    │   │       │   │   ├── __init__.py
+    │   │       │   │   ├── handler.py
+    │   │       │   │   └── requirements.txt
+    │   │       │   ├── index.py
+    │   │       │   ├── requirements.txt
+    │   │       │   └── template.yml
+    │   │       ├── python3-armhf
+    │   │       │   ├── Dockerfile
+    │   │       │   ├── function
+    │   │       │   │   ├── __init__.py
+    │   │       │   │   ├── handler.py
+    │   │       │   │   └── requirements.txt
+    │   │       │   ├── index.py
+    │   │       │   ├── requirements.txt
+    │   │       │   └── template.yml
+    │   │       └── ruby
+    │   │           ├── Dockerfile
+    │   │           ├── Gemfile
+    │   │           ├── function
+    │   │           │   ├── Gemfile
+    │   │           │   └── handler.rb
+    │   │           ├── index.rb
+    │   │           └── template.yml
+    │   └── asset
+    │       └── FaaS_Slack_Bot_Diagram.jpg
+    ├── Product_Info
+    │   ├── README.md
+    │   ├── entity_product_name_map.csv
+    │   ├── product_info_list.csv
+    │   ├── product_name_and_synonym.csv
+    │   └── product_name_and_synonym_entity_set.csv
+    ├── README.md
+    ├── Utility
+    │   ├── README.md
+    │   ├── __init__.py
+    │   ├── eve_mongo_utility.py
+    │   ├── faas_function_call_utility.py
+    │   ├── general_utility.py
+    │   ├── product_info_utility.py
+    │   └── requirements.txt
+    └── requirements.txt
+
+82 directories, 201 files

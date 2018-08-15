@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  slack-event-webhook-slack:
+    lang: python3
+    handler: ./slack-event-webhook-slack
+    image: yangwg/slack-event-webhook-slack
+    environment:
+      combine_output: false
+      FAAS_GATEWAY_URL: http://gateway:8080
+      FUNCTION_NAME_QUERY_DIALOGFLOW_SLACK: query-dialogflow-slack

@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  get-user-selected-option-from-slack-slack:
+    lang: python3
+    handler: ./get-user-selected-option-from-slack-slack
+    image: yangwg/get-user-selected-option-from-slack-slack
+    environment:
+      combine_output: false
+      FAAS_GATEWAY_URL: http://gateway:8080
+      FUNCTION_NAME_QUERY_DIALOGFLOW_SLACK: query-dialogflow-slack

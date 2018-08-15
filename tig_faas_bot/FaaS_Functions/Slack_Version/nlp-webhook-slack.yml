@@ -1,0 +1,15 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  nlp-webhook-slack:
+    lang: python3
+    handler: ./nlp-webhook-slack
+    image: yangwg/nlp-webhook-slack
+    environment:
+      combine_output: false
+      FAAS_GATEWAY_URL: http://gateway:8080
+      FUNCTION_NAME_GET_OPTION_LIST_SLACK: get-option-list-slack
+      FUNCTION_NAME_BOT_CRUD_SLACK: bot-crud-slack
+      FUNCTION_NAME_POST_MESSAGE_SLACK: post-message-slack

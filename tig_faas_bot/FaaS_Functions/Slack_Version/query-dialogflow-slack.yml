@@ -1,0 +1,19 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  query-dialogflow-slack:
+    lang: python3
+    handler: ./query-dialogflow-slack
+    image: yangwg/query-dialogflow-slack
+    environment:
+      combine_output: false
+      FAAS_GATEWAY_URL: http://gateway:8080
+      FUNCTION_NAME_POST_MESSAGE_SLACK: post-message-slack
+      SLACK_POST_URL: https://slack.com/api/chat.postMessage
+      DIALOGFLOW_BASE_URL_V1: https://api.dialogflow.com/v1
+      DIALOGFLOW_PROTOCOL_VERSION: 20150910
+      DIALOGFLOW_CLIENT_TOKEN_SECRET_NAME: dialogflow_client_token
+    secrets:
+    - dialogflow_client_token                          
